@@ -1,0 +1,138 @@
+.Exchange{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.2rem;
+}
+
+.exchange-header{
+    display: flex;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rate{
+    display: flex;
+    justify-content: center;
+    padding: 2rem; 
+}
+
+.exchange-card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.exchange-card-body{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.exchange-card-body-left{
+    flex: 1;
+}
+
+.exchange-card-body-right{
+    flex: 1;
+}
+
+
+.left-exchange{
+    padding: 2rem;
+    padding-top: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-exchange{
+    padding: 2rem;
+    padding-top: 1.5rem;  
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exchange-grid{
+    padding: 0.5rem;
+    padding-top: 1.5rem;  
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-exchange{
+    padding: 2rem;
+    padding-top: 1.5rem;  
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-exchange{
+    padding: 2rem;
+    padding-top: 1.5rem;  
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exchange-rate{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 2rem;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.exchange-rate>div:nth-of-type(1){
+    display: flex;
+    gap: 0.5rem;
+    flex: 2;
+    flex-direction: row;
+}
+
+.exchange-rate>div:nth-of-type(2){
+    display: flex;
+    gap: 0.2rem;
+    flex: 0.5;
+    flex-direction: column;
+}
+
+.exchange-rate>div:nth-of-type(3){
+    display: flex;
+    gap: 0.2rem;
+    flex: 1;
+    flex-direction: column;
+}
+
+.exchange-rate>div:nth-of-type(4){
+    display: flex;
+    gap: 0.2rem;
+    flex: 1;
+    flex-direction: column;
+}

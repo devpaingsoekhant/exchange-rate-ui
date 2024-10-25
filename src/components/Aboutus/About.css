@@ -1,0 +1,28 @@
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-header{
+    display: flex;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.about-us-body{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem;
+}
+
+.about-us-body>p{
+    text-indent: 8rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}

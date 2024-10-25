@@ -1,0 +1,73 @@
+.contact-us{
+    display: flex;
+    padding: 2rem;
+}
+
+.awesome{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+    justify-content: center;
+}
+
+.awesome>div:nth-last-child(1){
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-us-message{
+    color: white;
+    width: 30rem;
+}
+
+.contact-us-message>p{
+    line-height: 1.5rem;
+}
+
+.w-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.c-right{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.c-right .user{
+    width: 40rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 1px solid var(--orange);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea{
+    height: 4rem !important;
+}
+
+.submit-button{
+    color: white;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: var(--orange);
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
