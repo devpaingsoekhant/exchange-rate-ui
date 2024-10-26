@@ -50,10 +50,10 @@ function App() {
       <Router>
         <Provider store={store}>
           <Routes>
-            {/* <Route path="/" element={<WebsitePage />}></Route>
-            <Route path="/admin-panel" element={<LoginPage />}></Route>             */}
-            <RouterProvider router={router} />
-
+            <Route path="/" element={<WebsitePage />}></Route>
+            <Route path="/admin-panel" element={<LoginPage />}></Route> 
+            <Route path="/admin-panel/dashboard" element={<LoginPage />}></Route>            
+            
             {/* admin routes */}
             {/* <Route
               path="/admin-panel/dashboard"
