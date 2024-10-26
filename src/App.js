@@ -1,6 +1,13 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import WebsitePage from "./Pages/WebsitePage";
 import LoginPage from "./components/LoginPage/LoginPage";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
@@ -17,43 +24,54 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/admin-panel",
-      element: <AdminLayout/>,
-      children:[
+      element: <AdminLayout />,
+      children: [
         {
           path: "/admin-panel/dashboard",
-          element:<DashboardPage />
+          element: <DashboardPage />,
         },
         {
           path: "/admin-panel/users",
-          element:<DashboardPage />
+          element: <DashboardPage />,
         },
         {
           path: "/admin-panel/product",
-          element:<DashboardPage />
-        }
-      ]
-    },{
+          element: <DashboardPage />,
+        },
+      ],
+    },
+    {
       path: "/",
-      element: <WebsitePage/>,
+      element: <WebsitePage />,
     },
     {
       path: "/login",
-      element: <LoginPage/>,
-    },{
-      path:"*" ,
-      element:<PageNotFound />
-    }
-    
-  ])
+      element: <LoginPage />,
+    },
+    {
+      path: "*",
+      element: <PageNotFound />,
+    },
+  ]);
   return (
     <CookiesProvider>
       <Router>
         <Provider store={store}>
           <Routes>
             <Route path="/" element={<WebsitePage />}></Route>
-            <Route path="/admin-panel" element={<LoginPage />}></Route> 
-            <Route path="/admin-panel/dashboard" element={<LoginPage />}></Route>            
-            
+            <Route path="/admin-panel" element={<LoginPage />}></Route>
+            <Route path="/admin-panel/" element={<AdminLayout />}>
+              <Route
+                path="/admin-panel/dashboard"
+                element={<DashboardPage />}
+              ></Route>
+              <Route path="/admin-panel/users" element={<UserPage />}></Route>
+              <Route
+                path="/admin-panel/exchanges"
+                element={<ProductsPage />}
+              ></Route>
+            </Route>
+
             {/* admin routes */}
             {/* <Route
               path="/admin-panel/dashboard"

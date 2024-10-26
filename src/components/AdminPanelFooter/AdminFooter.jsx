@@ -1,9 +1,12 @@
 import React from 'react'
-import "./AdminFooter.css"
+import "../../Styles/AdminFooter.css"
 
 const AdminFooter = () => {
   return (
-    <div className='admin-footer'>AdminFooter</div>
+    <div className='admin-footer'>
+        <span>Myanmar Exchange Rates</span>
+        <span>© 2024. All rights reserved.</span>
+    </div>
   )
 }
 
